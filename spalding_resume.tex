@@ -1,10 +1,22 @@
-% This current resume is a derivative of https://github.com/deedydas/Deedy-Resume
-
-\documentclass[]{resume-openfont}
+\title{Spalding Resume}
+\documentclass[]{deedy-resume-openfont} % This current resume template is a derivative of https://github.com/deedydas/Deedy-Resume
+%----------------------------
+% Options
+\newif\iflinks % links flag
+\linkstrue
+%\linksfalse
+\newif\ifedu % edu - teaching experience flag
+%\edutrue
+\edufalse
+\newif\ifextra % extra - extracurricular flag
+\extratrue
+%\extrafalse
+%----------------------------
 \begin{document}
 \lastupdated
 \namesection{Thomas}{Spalding}{ %\urlstyle{same}\url{http://antivapor.net} \\
-\href{mailto:tommycs@mail.sfsu.edu}{tommycs@mail.sfsu.edu} | 707.376.8630 | https://github.com/digitalvapor}
+\href{mailto:tommycs@mail.sfsu.edu}{tommycs@mail.sfsu.edu} | 415.702.5049 | https://github.com/digitalvapor
+}
 
 \begin{minipage}[t]{0.34\textwidth}
 %----------------------------
@@ -13,34 +25,35 @@
 \subsection{MS in Computer Science}
 \descript{San Francisco State University}
 \location{Expected Dec 2016 | San Francisco, CA}
-College of Science and Engineering
+\href{http://cs.sfsu.edu}{College of Science and Engineering}
 \sectionsep
 
 \subsection{BS in Electrical Engineering}
 \descript{University of Central Florida}
 \location{Graduation Date Dec 2012 | Orlando, FL}
-College of Engineering and Computer Science
-\sectionsep
+\href{http://www.ece.ucf.edu}{College of Engineering and Computer Science}
+%\sectionsep
 
 %----------------------------
 \section{Literature}
 %----------------------------
-\textbullet{} D. Reid, A. Russo, R. Carro, M. Stephens, A. LePage, \custombold{T. Spalding}, E. Peterson and S. Seal, "Nanoscale additives tailor energetic reactions," Nanoletters, 7(7), 2157-2161, 2007.
+\textbullet{} D. Reid, A. Russo, R. Carro, M. Stephens, A. LePage, \custombold{T. Spalding}, E. Peterson and S. Seal, \href{http://pubs.acs.org/doi/abs/10.1021/nl0625372}{"Nanoscale additives tailor energetic reactions,"} Nanoletters, 7(7), 2157-2161, 2007.
 
-\textbullet{} A. Adu, K. Mendoza, \custombold{T. Spalding}, F. Trinh, “Electronic Music Interaction: modern and alternative interactions with music  devices,” EECS UCF, 2012
-\sectionsep
+\textbullet{} A. Adu, K. Mendoza, \custombold{T. Spalding}, F. Trinh, \href{http://eecs.ucf.edu/seniordesign/su2012fa2012/g01/docs/seniordesign2paper.pdf}{âElectronic Music Interaction: modern and alternative interactions with music  devices,â} EECS UCF, 2012
+%\sectionsep
 
 %----------------------------
 \section{Senior Design}
 %----------------------------
 A theremin, pitch-to-MIDI converter, and an expandable OSC grid controller were designed as a study on the themes of iterative design, learning through direct feedback, and creating a virtuosic experience with ease. \\
-See \href{http://eecs.ucf.edu/seniordesign/su2012fa2012/g01}{\custombold{eecs.ucf.edu/seniordesign/su2012fa2012/g01}}
+%See \href{http://eecs.ucf.edu/seniordesign/su2012fa2012/g01}{\custombold{eecs.ucf.edu/seniordesign/su2012fa2012/g01}}
+See \href{http://eecs.ucf.edu/seniordesign/su2012fa2012/g01}{\custombold{http://goo.gl/oZuygT}}.%shorturl
 
 %----------------------------
 \section{Skills}
 %----------------------------
 \subsection{Programming}
-Android \textbullet{} ASP \textbullet{} Assembly (68HC11) \textbullet{} BASH \textbullet{}  C/C++ \textbullet{} CSS \textbullet{} Git \textbullet{} HTML \textbullet{} Java \textbullet{} Javascript/jQuery \textbullet{} LabWindows/CVI \textbullet{} Less/Sass \textbullet{} Lua/Löve Lua \textbullet{} MySQL \textbullet{} Processing \textbullet{} Python
+Android \textbullet{} Assembly (68HC11) \textbullet{} BASH \textbullet{}  C/C++ \textbullet{} CSS \textbullet{} Django \textbullet{} Git \textbullet{} HTML \textbullet{} IDL/GDL \textbullet{} Java \textbullet{} Javascript/jQuery \textbullet{} Jinja \textbullet{} LabWindows/CVI \textbullet{} Less/Sass \textbullet{} Liquid \textbullet{} Lua/LÃ¶ve Lua \textbullet{} MySQL \textbullet{} Pelican \textbullet{} Processing \textbullet{} Python \textbullet{} Vagrant
 \sectionsep
 
 \subsection{Design}
@@ -49,19 +62,22 @@ CAD \textbullet{} Eagle \textbullet{} Fritzing \textbullet{} KiCad \textbullet{}
 
 \subsection{Other}
 Crystal Reports \textbullet{} Embedded Systems \textbullet{} High Frequency Structural Simulator (HFSS) \textbullet{} \LaTeX\ \textbullet{} MAX/MSP \textbullet{} MetCal/MetTrack \textbullet{} Microcontrollers \textbullet{} OSC implementation
-\sectionsep
-
-%----------------------------
-%\section{Links}
-%----------------------------
-%Websites I contribute to:\\
-%\vspace{2pt}
-%\begin{tabular}{rl}
-%Github: & \href{https://github.com/digitalvapor}{\custombold{github.com/digitalvapor}} \\
-%Blog: & \href{http://antivapor.net}{\custombold{antivapor.net}} \\
-%ACM: & \href{http://sfsu.acm.org}{\custombold{sfsu.acm.org}}
-%\end{tabular}
 %\sectionsep
+
+\iflinks
+%----------------------------
+\section{Links}
+%----------------------------
+Websites I contribute to:\\
+\vspace{2pt}
+\begin{tabular}{rl}
+Fritzing: & \href{http://fritzing.org}{\custombold{fritzing.org}} \\
+%Github: & \href{https://github.com/digitalvapor}{\custombold{github.com/digitalvapor}} \\
+Blog: & \href{http://antivapor.net}{\custombold{antivapor.net}} \\
+ACM: & \href{http://sfsu.acm.org}{\custombold{sfsu.acm.org}}
+\end{tabular}
+\sectionsep
+\fi
 
 \end{minipage}
 \hfill
@@ -70,67 +86,108 @@ Crystal Reports \textbullet{} Embedded Systems \textbullet{} High Frequency Stru
 %----------------------------
 \section{Experience}
 %----------------------------
-\runsubsection{EdTech}
-\descript{| App Creation, 2D \& 3D Video Game Instructor}
-\location{Jun 5 – Jul 25 2014 | San Francisco, CA}
+\runsubsection{Fritzing}{http://fritzing.org}
+\descript{| Open Source Web Developer}
+\location{October 2014 - Present | San Francisco, CA}
 \vspace{\topsep}
 \begin{tightemize}
-\item Introduce kids to computer science via Raspberry Pi, Scratch, Alice3 and App Inventor. Advanced kids were introduced to Python, Lua/Löve Lua, and Java for Android.
+\item Web developer and open source contributor to \href{http://fritzing.org}{Fritzing.org}.
 \end{tightemize}
-\runsubsection{EdMo in the Park}
-\descript{| Nature Counselor}
+\sectionsep
+
+\ifedu
+\runsubsection{Expert Tutoring}{http://expert-tutoring.org}
+\descript{| Private Tutor}
+\location{September 2014 - Present | San Francisco, CA}
+\begin{tightemize}
+\item Chemistry and Mathematics tutor.
+\end{tightemize}
+\sectionsep
+\fi
+
+\runsubsection{Edventure More}{http://edventuremore.org}\\
+\ifedu
+\descript{EdTech | Makers Studio Curriculum Consultant}
+\location{October 2014 | San Francisco, CA}
+\begin{tightemize}
+\item Updated the curriculum for the Makers Studio course.
+\item Introduce kids to soldering and circuits. Make musical instruments, walking bug robots, and LED t-shirts with conductive thread.
+\end{tightemize}
+\fi
+\descript{EdTech | App Creation, 2D \& 3D Video Game Instructor}
+\location{June - July 2014 | San Francisco, CA}
+\begin{tightemize}
+\item Introduce kids to computer science via Raspberry Pi, Scratch, Alice3 and App Inventor.
+Advanced kids were introduced to Python, Lua/LÃ¶ve Lua, and Java for Android.
+\end{tightemize}
+\ifedu
+\descript{EdMo in the Park | Nature and Science Instructor}
 \location{August 2014 | San Francisco, CA}
 \begin{tightemize}
 \item Incorporate art, science, history, and geography into a positive nature experience for kids.
 \end{tightemize}
 \sectionsep
+\fi
 
-\runsubsection{Lockheed Martin}
+\runsubsection{Evenly}{http://evenly.com}
+\descript{| Front-end Web Developer}
+\location{September 2014 | San Francisco, CA}
+\begin{tightemize}
+\item Front-end web developer, javascript, UI and splash page.
+\item Evenly was recently acquired by Square and became \href{https://square.com/cash}{Square Cash}.
+\end{tightemize}
+\sectionsep
+
+\runsubsection{Lockheed Martin}{http://lockheedmartin.com/us/products/calibration-services.html}
 \descript{| Junior Metrologist and Test Engr}
 College Work Experience Program (C.W.E.P.) Participant at Lockheed Martin Mission Systems \& Training (MST), UCF\\
-\location{Apr 6 2010 – Jan 31 2013 | Orlando, FL}
+\location{Apr 6 2010 â Jan 31 2013 | Orlando, FL}
 Test Engineer at Lockheed Martin Mission Systems \& Training (MST), DCR\\
 \location{Mar 4 2013 - Jul 31 2013 | Orlando, FL}
 \begin{tightemize}
-\item Junior  metrologist,  and  primary  website  and  database  admin  for  the Calibration and Metrology lab. Responsible for developing programs for a wide range of calibration and metrological instruments, and wrote a series of web tools for the lab’s internal site and database.
+\item Junior  metrologist,  and  primary  website  and  database  admin  for  the Calibration and Metrology lab.
+\item Responsible for developing programs for a wide range of calibration and metrological instruments, and wrote a series of web tools for the labâs internal site and database.
 \end{tightemize}
 \sectionsep
 
-\runsubsection{AMPAC \& MMAE, UCF}
+\runsubsection{AMPAC \& MMAE, UCF}{http://ampac.ucf.edu}
 \descript{| Undergraduate Research Assistant}
 Undergraduate Research Assistant at the Advanced Materials Processing and Analysis Center (AMPAC) \&\\
 Mechanical, Materials and Aerospace Engineering (MMAE), UCF\\
-\location{Sep 18 2006 – Aug 8 2008 | Orlando, FL}
+\location{Sep 18 2006 â Aug 8 2008 | Orlando, FL}
 \begin{tightemize}
-\item Assisted  PhD  Students  and  performed  own  experiments  on  topics  such  as solderability studies towards lead-free alloys, modifying surface chemistry of pozzolaneous coal combustion products for new concretes, and using nano-dopants to tailor burn rates of solid rocket propellant. Built a catalytic reactor for mass spectrometry.
+\item Assisted  PhD  Students  and  performed  own  experiments  on  topics  such  as solderability studies towards lead-free alloys, modifying surface chemistry of pozzolaneous coal combustion products for new concretes, and using nano-dopants to tailor burn rates of solid rocket propellant.
+\item Built a \href{http://sudipta-seal.ucf.edu/images/photos/characterization/Catalytic-Reactor.jpg}{catalytic reactor} for mass spectrometry.
 \end{tightemize}
-\sectionsep
+%\sectionsep
 
 \section{International Studies and Research}
-\runsubsection{Instytut Odlewnictwa (Foundry Research Institute)}\\
+\runsubsection{Instytut Odlewnictwa (Foundry Research Institute)}{https://iod.krakow.pl/en/}\\
 %\descript{| Undergraduate Researcher}
 \location{Summer of '08 | Krakow, Poland}
 Studies and Research: The effects of materials surface chemistry on wettability and spreading of liquid Sn on Ni substrates.
 \sectionsep
 
-\runsubsection{Warsaw University}\\
+\runsubsection{Warsaw University}{http://crystal.chem.uw.edu.pl}\\
 %\descript{| Undergraduate Researcher}
 \location{Summer of '07 | Warsaw, Poland}
 Studies and Research: Titania mixed systems for catalytic application.
 \sectionsep
 
-\runsubsection{Florida State University London Study Centre}\\
+\runsubsection{Florida State University London Study Centre}{http://international.fsu.edu/london}\\
 %\descript{| Undergraduate Researcher}
 \location{Summer of '06 | London, England}
 Studies: Contemporary Literature, Western Humanities and Introduction to Shakespeare
-\sectionsep
+%\sectionsep
 
+\ifextra
 \section{School Involvement}
 \begin{tabular}{rll}
 2014 & officer & \href{http://sfsu.acm.org}{Association for Computing Machinery at SFSU}\\
 2014 & volunteer & Friends of the Greenhouse at SFSU
 \end{tabular}
-\sectionsep
+%\sectionsep
+\fi
 
 \end{minipage}
 \end{document}  \documentclass[]{article}
