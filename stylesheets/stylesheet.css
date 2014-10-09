@@ -142,21 +142,29 @@ a.button small {
   display: block;
   font-size: 11px;
 }
-header a.button {
-  position: absolute;
-  right: 0;
-  top: 0;
-  background: transparent url(../images/github-button.png) 0 0 no-repeat;
+body a.button {
+	width:350px;
+	padding-left: 64px;
+	display: block;
+	background: transparent url(../images/download-button-wide.png) 0 0 no-repeat;
+	margin-bottom: 20px;
+	font-size: 21px;
 }
 aside a.button {
-  width: 138px;
-  padding-left: 64px;
-  display: block;
-  background: transparent url(../images/download-button.png) 0 0 no-repeat;
-  margin-bottom: 20px;
-  font-size: 21px;
+	width: 138px;
+	padding-left: 64px;
+	display: block;
+	background: transparent url(../images/download-button.png) 0 0 no-repeat;
+	margin-bottom: 20px;
+	font-size: 21px;
 }
-
+header a.button {
+	width:138px;
+	position: absolute;
+	right: 0;
+	top: 0;
+	background: transparent url(../images/github-button.png) 0 0 no-repeat;
+}
 code, pre {
   font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;
   color: #222;
