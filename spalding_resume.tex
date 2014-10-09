@@ -8,6 +8,9 @@
 \newif\ifedu % edu - teaching experience flag
 %\edutrue
 \edufalse
+\newif\ifweb % web - web & tech experience flag
+\webtrue
+%\webfalse
 \newif\ifextra % extra - extracurricular flag
 \extratrue
 %\extrafalse
@@ -86,6 +89,7 @@ ACM: & \href{http://sfsu.acm.org}{\custombold{sfsu.acm.org}}
 %----------------------------
 \section{Experience}
 %----------------------------
+\ifweb
 \runsubsection{Fritzing}{http://fritzing.org}
 \descript{| Open Source Web Developer}
 \location{October 2014 - Present | San Francisco, CA}
@@ -94,11 +98,13 @@ ACM: & \href{http://sfsu.acm.org}{\custombold{sfsu.acm.org}}
 \item Web developer and open source contributor to \href{http://fritzing.org}{Fritzing.org}.
 \end{tightemize}
 \sectionsep
+\fi
 
 \ifedu
 \runsubsection{Expert Tutoring}{http://expert-tutoring.org}
 \descript{| Private Tutor}
 \location{September 2014 - Present | San Francisco, CA}
+\vspace{\topsep}
 \begin{tightemize}
 \item Chemistry and Mathematics tutor.
 \end{tightemize}
@@ -107,18 +113,17 @@ ACM: & \href{http://sfsu.acm.org}{\custombold{sfsu.acm.org}}
 
 \runsubsection{Edventure More}{http://edventuremore.org}\\
 \ifedu
-\descript{EdTech | Makers Studio Curriculum Consultant}
+\descript{EdTech | Maker Studio Curriculum Consultant}
 \location{October 2014 | San Francisco, CA}
-\begin{tightemize}
-\item Updated the curriculum for the Makers Studio course.
-\item Introduce kids to soldering and circuits. Make musical instruments, walking bug robots, and LED t-shirts with conductive thread.
-\end{tightemize}
+%\begin{tightemize}
+%\item Wrote the curriculum for the \href{http://www.campedtech.org/maker-studio/}{Maker Studio course}.
+%\end{tightemize}
 \fi
 \descript{EdTech | App Creation, 2D \& 3D Video Game Instructor}
 \location{June - July 2014 | San Francisco, CA}
 \begin{tightemize}
-\item Introduce kids to computer science via Raspberry Pi, Scratch, Alice3 and App Inventor.
-Advanced kids were introduced to Python, Lua/LÃ¶ve Lua, and Java for Android.
+\item Introduce kids to computer science via Raspberry Pi, Scratch, Alice3 and App Inventor.\ifweb
+Advanced kids were introduced to Python, Lua/LÃ¶ve Lua, and Java for Android.\fi
 \end{tightemize}
 \ifedu
 \descript{EdMo in the Park | Nature and Science Instructor}
@@ -129,6 +134,7 @@ Advanced kids were introduced to Python, Lua/LÃ¶ve Lua, and Java for Android.
 \sectionsep
 \fi
 
+\ifweb
 \runsubsection{Evenly}{http://evenly.com}
 \descript{| Front-end Web Developer}
 \location{September 2014 | San Francisco, CA}
@@ -137,6 +143,7 @@ Advanced kids were introduced to Python, Lua/LÃ¶ve Lua, and Java for Android.
 \item Evenly was recently acquired by Square and became \href{https://square.com/cash}{Square Cash}.
 \end{tightemize}
 \sectionsep
+\fi
 
 \runsubsection{Lockheed Martin}{http://lockheedmartin.com/us/products/calibration-services.html}
 \descript{| Junior Metrologist and Test Engr}
@@ -146,7 +153,7 @@ Test Engineer at Lockheed Martin Mission Systems \& Training (MST), DCR\\
 \location{Mar 4 2013 - Jul 31 2013 | Orlando, FL}
 \begin{tightemize}
 \item Junior  metrologist,  and  primary  website  and  database  admin  for  the Calibration and Metrology lab.
-\item Responsible for developing programs for a wide range of calibration and metrological instruments, and wrote a series of web tools for the labâs internal site and database.
+\ifweb\item\fi Responsible for developing programs for a wide range of calibration and metrological instruments, and wrote a series of web tools for the labâs internal site and database.
 \end{tightemize}
 \sectionsep
 
@@ -157,7 +164,7 @@ Mechanical, Materials and Aerospace Engineering (MMAE), UCF\\
 \location{Sep 18 2006 â Aug 8 2008 | Orlando, FL}
 \begin{tightemize}
 \item Assisted  PhD  Students  and  performed  own  experiments  on  topics  such  as solderability studies towards lead-free alloys, modifying surface chemistry of pozzolaneous coal combustion products for new concretes, and using nano-dopants to tailor burn rates of solid rocket propellant.
-\item Built a \href{http://sudipta-seal.ucf.edu/images/photos/characterization/Catalytic-Reactor.jpg}{catalytic reactor} for mass spectrometry.
+\ifweb\item\fi Built a \href{http://sudipta-seal.ucf.edu/images/photos/characterization/Catalytic-Reactor.jpg}{catalytic reactor} for mass spectrometry.
 \end{tightemize}
 %\sectionsep
 
