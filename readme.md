@@ -5,6 +5,12 @@ Thanks to some recent work as an open source contributor, writing curriculum for
 * [Web, Tech, & Engineering Resume](https://github.com/digitalvapor/cv/raw/master/spalding_resume_engineering.pdf) (pdf)
 * [Teaching & Education Resume](https://github.com/digitalvapor/cv/raw/master/spalding_resume_education.pdf) (pdf)
 
+#Dependencies
+* texlive with xetex (`apt-get install texlive texlive-latex-extra`)
+
+#Instructions
+1. `xelatex spalding_resume.tex`
+
 #License
 This is licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](https://creativecommons.org/licenses/by-sa/4.0/).
 
